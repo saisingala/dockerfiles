@@ -1,0 +1,5 @@
+FROM almalinux:9
+LABEL trainer="sivakumar" \
+      course="Devops" \
+      duration="12hrs" \
+      topics="dockerfiles"

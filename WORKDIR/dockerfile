@@ -1,0 +1,7 @@
+FROM almalinux:9
+RUN mkdir /tmp/docker
+workdir /tmp/docker
+RUN pwd
+RUN echo "workdir equals to cd" > hello.txt
+CMD ["sleep", "100"]
+
