@@ -4,6 +4,8 @@ FROM almalinux:${version:-9}
 ARG course="Devops witj aws" \
     duration="120hrs" \
     trainer="sivakumar"
+ENV duration=$duration 
+# set arg value to env variable
 RUN echo "course: $course, duration: $duration, trainer:$trainer"
 CMD ["sleep", "100"]
 
